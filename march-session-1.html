@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>CCIJ - Data training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="markdown github">
+
+	<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>CCIJ - Data training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="markdown github">
+
+	<header class="navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<nav role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">CCIJ - Data training</a>
+				</div> <!-- /.navbar-header -->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Session notes<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="march-session-1.html">Interviewing data</a></li>
+								<li><a href="march-session-2.html">Acquiring, processing and cleaning data</a></li>
+							</ul>
+						</li>
+						<li><a href="mailto:p.aldhous@ccij.io">email instructor</a></li>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div> <!-- /.navbar-header -->
+	</header>
+	
+	<div class="container all">
+
+		<h1 id="interviewing-data"><a name="interviewing-data" href="#interviewing-data"></a>Interviewing data</h1>
+		<p>As a data journalist, I think in terms of “interviewing” data, approaching it with questions for which I want to find answers. To do that, you need to understand the structure of your data, the operations you can apply to ask questions of it, and some core principles of using numbers in the newsroom.</p>
+		<p>In this presentation, I’ll cover those principles.</p>
+		<div class="iframe-container">
+		<iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/1ISyRziI_QXUhX5YDFaBOLrBwJ5WY0ooUud2w9y3__Tg/preview" allowfullscreen="allowfullscreen"><br><br></iframe>
+		</div>
+		<h3 id="the-tool-we-will-use"><a name="the-tool-we-will-use" href="#the-tool-we-will-use"></a>The tool we will use</h3>
+		<p>Our spreadsheet tool for this session will be <a href="https://workspace.google.com/products/sheets/">Google Sheets</a>. Use from <a href="https://drive.google.com/drive/home">Drive</a> in your Google account.</p>
+		<h3 id="the-data-we-will-use"><a name="the-data-we-will-use" href="#the-data-we-will-use"></a>The data we will use</h3>
+		<p>Download the zipped folder from <a href="data-march-sessions.zip">this link</a> and unzip. It contains the following files that we will use in this session:</p>
+		<ul>
+		<li><p><code>indicators.csv</code> Data from the World Bank’s <a href="https://data.worldbank.org/indicator">World Development Indicators</a> portal, including the following variables:</p>
+		<ul>
+		<li><p><code>country</code> Name of each nation/territory.</p>
+		</li><li><p><code>iso2c</code> <code>isoc3</code> Two- and three-letter codes for each nation/territory.</p>
+		</li><li><p><code>year</code> From 2010 to 2023.</p>
+		</li><li><p><code>gdp_percap</code> Gross Domestic Product per capita (per person) in current international dollars, corrected for purchasing power in different territories.</p>
+		</li><li><p><code>population</code> Estimated total population at mid-year, including all residents apart from refugees.</p>
+		</li><li><p><code>co2_emissions</code> Total greenhouse gas emissions (excluding land use, land-use change and forestry) in millions of metric tonnes of carbon dioxide equivalent.</p>
+		</li><li><p><code>pc_land_forest</code> Forest area as a percentage of land area.</p>
+		</li><li><p><code>pc_land_arable</code> Arable land as a percentage of land area.</p>
+		</li><li><p><code>land_area</code> Total land area in square kilometers.</p>
+		</li></ul>
+		</li><li><p>We will also import data from the file at this url:</p>
+		<p><a href="https://raw.githubusercontent.com/paldhous/owid-covid/main/covid_owid.csv"><code>https://raw.githubusercontent.com/paldhous/owid-covid/main/covid_owid.csv</code></a>.</p>
+		<p>This has the number of new COVID cases and deaths reported worldwide for every day since the start of the pandemic until April 2023, as recorded by <a href="#0">Our World in Data</a>. It is good for showing how to perform anchored calculations and calculate rolling averages and cumulative totals for time-series data.</p>
+		</li></ul>
+		<h3 id="working-with-spreadsheets"><a name="working-with-spreadsheets" href="#working-with-spreadsheets"></a>Working with spreadsheets</h3>
+		<p>I’ll demonstrate working with this data in Google Sheets. Rather than trying to follow along in the live sessions, I’d suggest focusing on understanding the concepts, methods, and formulas I’m showing. You can put questions into the Zoom chat and we can cover in a Q&amp;A at the end of the session.</p>
+		<p>The session will be recorded, so you can practice with the video at your own pace later.</p>
+		<h3 id="resources"><a name="resources" href="#resources"></a>Resources</h3>
+		<p>Sarah Cohen: <a href="numbers-in-the-newsroom.pdf">Common mistakes and how to avoid them</a> (extract from the book <em>Numbers in the Newsroom</em>, sadly no longer available)</p>
+		<p>Ben Welsh: <a href="https://observablehq.com/collection/@palewire/numbers-in-the-newsroom">Numbers in the Newsroom online calculators</a></p>
+	</div> <!-- /.container all -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

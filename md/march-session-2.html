@@ -1,0 +1,63 @@
+
+		<h1 id="acquiring,-processing-and-cleaning-data"><a name="acquiring,-processing-and-cleaning-data" href="#acquiring,-processing-and-cleaning-data"></a>Acquiring, processing and cleaning data</h1>
+		<h3 id="the-tools-we-will-use"><a name="the-tools-we-will-use" href="#the-tools-we-will-use"></a>The tools we will use</h3>
+		<ul>
+		<li><p><a href="https://journaliststudio.google.com/pinpoint/about/">Google Pinpoint</a> to extract structured data from a series of documents and use its AI functions to obtain summaries of the documents. Sign up for access using an email address associated with your Google account, noting your status as a journalist.</p>
+		</li><li><p><a href="https://openrefine.org/">Open Refine</a> to process and clean data. Click the download button to download and install for your computer’s operating system.</p>
+		</li><li><p><a href="https://workspace.google.com/products/sheets/">Google Sheets</a> to show how to join data from multiple tables.</p>
+		</li></ul>
+		<h3 id="the-data-we-will-use"><a name="the-data-we-will-use" href="#the-data-we-will-use"></a>The data we will use</h3>
+		<p>We will again use data from the zipped folder at <a href="data-march-sessions.zip">this link</a> that you downloaded last week. It contains the following folders and files that we will use in this session:</p>
+		<ul>
+		<li><p><code>energy_lobbying</code> Folder containing the following:</p>
+		<ul>
+		<li><p><code>documents</code> Subfolder containing “<a href="https://www.justice.gov/nsd-fara/page/file/1273636/dl?inline=">Exhibit B</a>“ documents filed with the U.S. Department of Justice by lobbyists representing “foreign principals” (which can be governments, organizations, corporations, or individuals) working in the field of energy in 2024 and 2025.</p>
+		</li><li><p><code>exhibits_b.csv</code> Structured data extracted from those documents, cleaned to standardize the names of the foreign principals.</p>
+		</li><li><p><code>foreign_principals.csv</code> Data with the countries of those foreign principals, which we will join to the extracted data.</p>
+		</li></ul>
+		</li><li><p><code>co2_emissions</code> Total greenhouse gas emissions (excluding land use, land-use change and forestry) in millions of metric tonnes of carbon dioxide equivalent. We will reshape this data from a wide to a “tidy” format.</p>
+		</li><li><p><code>ucb_stanford.csv</code> Data on grants awarded by the U.S. government to the University of California, Berkeley and to Stanford University. It is ideal for demonstrating the power of Open Refine to clean and process “dirty” data prior to analysis.</p>
+		</li></ul>
+		<h3 id="portals-with-useful-environmental-data"><a name="portals-with-useful-environmental-data" href="#portals-with-useful-environmental-data"></a>Portals with useful environmental data</h3>
+		<ul>
+		<li>The <strong>World Bank’s <a href="https://data.worldbank.org/indicator/?tab=all">World Development Indicators</a></strong> catalog contains data for thousands of variables, compiled by the bank, other UN agencies, and other reliable sources.</li><li><a href="https://ourworldindata.org/"><strong>Our World In Data</strong></a> Many charts and maps with downloadable data, again compiled from multiple vetted sources by a team at the University of Oxford.</li><li><a href="https://www.unep.org/data-resources"><strong>UN Environment Programme</strong></a></li><li><a href="https://unstats.un.org/UNSDWebsite/"><strong>UN Statistical Division</strong></a></li><li><a href="http://data.un.org/Explorer.aspx"><strong>UN Data Explorer</strong></a> Links to many UN databases.</li><li><a href="https://cds.climate.copernicus.eu/"><strong>EU Copernicus Climate Data Store</strong></a> Great resource for climate and other environmental data, but requires some specialist knowledge to acquire and use its data.</li></ul>
+		<h3 id="google-data-search"><a name="google-data-search" href="#google-data-search"></a>Google data search</h3>
+		<ul>
+		<li><a href="https://www.google.com/advanced_search"><strong>Advanced search</strong></a> Using the options for “site or domain” (e.g. usgs.gov for data on earthquakes) and/or “filetype” (e.g. Excel spreadsheets) can help hone searches for data.</li><li><a href="https://datasetsearch.research.google.com/"><strong>Dataset search</strong></a> A searchable catalog of data sources curated by Google.</li></ul>
+		<h3 id="capturing-data-from-html-tables"><a name="capturing-data-from-html-tables" href="#capturing-data-from-html-tables"></a>Capturing data from HTML tables</h3>
+		<p>Install the <strong>Table Capture</strong> (<a href="https://chrome.google.com/webstore/detail/table-capture/iebpjdmgckacbodjpijphcplhebcmeop?hl=en">Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/table-capture-firefox/">Firefox</a>) extension for your browser.</p>
+		<h3 id="downloading-multiple-files-at-once"><a name="downloading-multiple-files-at-once" href="#downloading-multiple-files-at-once"></a>Downloading multiple files at once</h3>
+		<p>Install the <strong>DownThemAll!</strong> (<a href="https://chrome.google.com/webstore/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge?hl=en">Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">Firefox</a>) extension for your browser.</p>
+		<h3 id="extracting-data-from-searchable-online-databases"><a name="extracting-data-from-searchable-online-databases" href="#extracting-data-from-searchable-online-databases"></a>Extracting data from searchable online databases</h3>
+		<h4 id="get-to-know-the-quirks-of-each-database"><a name="get-to-know-the-quirks-of-each-database" href="#get-to-know-the-quirks-of-each-database"></a>Get to know the quirks of each database</h4>
+		<p>When you start working with a new online database, take some time to familiarize yourself with how its searches work: Read the Help or FAQs, and then run test searches to see what results you obtain. Many online databases can be searched using Boolean logic, using the operators <code>AND</code>, <code>OR</code> and <code>NOT</code> to link search terms together. So find out how a particular database uses Boolean logic — and the default settings that it will use if you list search terms without any Boolean operators.</p>
+		<p>Putting search terms in quote marks often searches for a specific phrase. Also find out whether the database allows “wildcards,” symbols such as <code>*</code> or <code>%</code> that can be dropped into your search to obtain results with variations on a search term.</p>
+		<h4 id="beware-search-and-download-limits"><a name="beware-search-and-download-limits" href="#beware-search-and-download-limits"></a>Beware search and download limits</h4>
+		<p>Having run a search on an online database, you will usually want to download the results, so look for the download links or buttons.</p>
+		<p>A common problem with online databases, however, is that they may impose limits on the number of results that are returned on each search. And even when a search returns everything, there may be a limit on how many of those results can be downloaded to your own computer.</p>
+		<p>If broad searches on a database keep returning the same number of results, that is a sign that you are probably running up against a search limit, and any download will not contain the complete set of data that you are interested in. However, you may be able to work out ways of searching to obtain all of the data in chunks.</p>
+		<h4 id="download-the-entire-database-if-possible"><a name="download-the-entire-database-if-possible" href="#download-the-entire-database-if-possible"></a>Download the entire database if possible</h4>
+		<p>Downloading an entire database, where this is allowed, frees you from the often-limited options given on an online advanced search form. You can then upload the data into your own software, and query it in any way that you want.</p>
+		<p>So look for ways to grab all of the data. There may be a link to a bulk data download. One trick worth trying is to run a search on just the database’s wildcard character, or with the query boxes left blank.</p>
+		<p>Be aware, however, that large databases may exceed the limits of spreadsheet software. Google Sheets, for example, <a href="https://support.google.com/drive/answer/37603">currently has a limit</a> of 10 million cells per spreadsheet.</p>
+		<h3 id="do-i-need-to-clean,-convert-or-reshape-this-data?"><a name="do-i-need-to-clean,-convert-or-reshape-this-data?" href="#do-i-need-to-clean,-convert-or-reshape-this-data?"></a>Do I need to clean, convert or reshape this data?</h3>
+		<p>In this presentation I will discuss common problems with data that should be considered before moving on to analyze/interview the data:</p>
+
+		<div class = "iframe-container">
+		<iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/1flMmZnYZuK1F6LMYIyTNMFmiUc3oEf4012U27dTrbeY/preview" allowfullscreen="allowfullscreen"><br><br></iframe>
+		</div>
+
+		<h3 id="**using-google-pinpoint-to-extract-structured-data-from-documents**"><a name="**using-google-pinpoint-to-extract-structured-data-from-documents**" href="#**using-google-pinpoint-to-extract-structured-data-from-documents**"></a><strong>Using Google Pinpoint to extract structured data from documents</strong></h3>
+		<p>I will demonstrate with our energy lobbying documents. This video from Google is another useful reference:</p>
+		<div class="embed-responsive embed-responsive-16by9"><br>      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rqr6rker5V0" allowfullscreen></iframe><br></div>
+
+		<h3 id="processing-and-cleaning-data-with-open-refine"><a name="processing-and-cleaning-data-with-open-refine" href="#processing-and-cleaning-data-with-open-refine"></a>Processing and cleaning data with Open Refine</h3>
+		<p>I will demonstrate reshaping and cleaning data with Open Refine and show how it can be used to generate a reproducible recipe to repeat a data processing pipeline on data with the same format and column headers.</p>
+		<p>For the most part, I will use Open Refine’s point-and-click interface, but for one data transformation I will use the following formula, which will be easier to copy-and-paste than to type:</p>
+		<p><code>value.replace(&#39;$&#39;,&#39;&#39;).replace(&#39;(&#39;,&#39;-&#39;).replace(&#39;)&#39;,&#39;&#39;).replace(&#39;,&#39;,&#39;&#39;)</code></p>
+		<h3 id="open-refine-resources"><a name="open-refine-resources" href="#open-refine-resources"></a>Open Refine resources</h3>
+		<ul>
+		<li><p><a href="https://github.com/OpenRefine/OpenRefine/wiki">Open Refine Wiki</a></p>
+		</li><li><p><a href="https://openrefine.org/docs">Open Refine User Manual</a></p>
+		</li><li><p><a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Open Refine Recipes</a></p>
+		</li></ul>
