@@ -74,17 +74,15 @@ Be aware, however, that large databases may exceed the limits of spreadsheet sof
 
 In this presentation I will discuss common problems with data that should be considered before moving on to analyze/interview the data:
 
+::: iframe-container
 <iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/1flMmZnYZuK1F6LMYIyTNMFmiUc3oEf4012U27dTrbeY/preview" allowfullscreen="allowfullscreen">
 
 </iframe>
+:::
 
 ### **Using Google Pinpoint to extract structured data from documents**
 
-I will demonstrate with our energy lobbying documents. This video from Google is another useful reference:
-
-<div class="embed-responsive embed-responsive-16by9">
-  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rqr6rker5V0" allowfullscreen></iframe>
-</div>
+I will demonstrate with our energy lobbying documents. This [video](https://www.youtube.com/watch?v=Rqr6rker5V0) from Google is another useful reference.
 
 ### Processing and cleaning data with Open Refine
 

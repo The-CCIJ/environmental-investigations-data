@@ -4,9 +4,13 @@ As a data journalist, I think in terms of "interviewing" data, approaching it wi
 
 In this presentation, I'll cover those principles.
 
+<div class = "iframe-container">
+
 <iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/1ISyRziI_QXUhX5YDFaBOLrBwJ5WY0ooUud2w9y3__Tg/preview" allowfullscreen="allowfullscreen">
 
 </iframe>
+
+</div>
 
 ### The tool we will use
 
@@ -52,8 +56,7 @@ The session will be recorded, so you can practice with the video at your own pac
 
 ### Resources
 
-Sarah Cohen: [Common mistakes and how to avoid them](numbers-in-the-newsroom.pdf)
-Extract from the book *Numbers in the Newsroom*, sadly no longer available.
+Sarah Cohen: [Common mistakes and how to avoid them](numbers-in-the-newsroom.pdf) Extract from the book *Numbers in the Newsroom*, sadly no longer available.
 
 Ben Welsh: [Numbers in the Newsroom online calculators](https://observablehq.com/collection/@palewire/numbers-in-the-newsroom)
 
