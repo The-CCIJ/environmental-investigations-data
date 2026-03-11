@@ -52,6 +52,13 @@ The session will be recorded, so you can practice with the video at your own pac
 
 ### Resources
 
-Sarah Cohen: [Common mistakes and how to avoid them](numbers-in-the-newsroom.pdf) (extract from the book *Numbers in the Newsroom*, sadly no longer available)
+Sarah Cohen: [Common mistakes and how to avoid them](numbers-in-the-newsroom.pdf)
+Extract from the book *Numbers in the Newsroom*, sadly no longer available.
 
 Ben Welsh: [Numbers in the Newsroom online calculators](https://observablehq.com/collection/@palewire/numbers-in-the-newsroom)
+
+Paul Bradshaw: [Finding Stories With Spreadsheets](https://leanpub.com/spreadsheetstories/)\
+E-book from the head of the Masters in Data Journalism program at Birmingham City University in the UK.
+
+[Google Sheets function list](https://support.google.com/docs/table/25273?hl=en)\
+A handy reference for all of the functions available in Google Sheets.
