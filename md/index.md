@@ -9,3 +9,7 @@ We'll meet [on Zoom](https://us02web.zoom.us/meetings/88633895879/invitations?si
 -   **Mar 11:** [Interviewing data](march-session-1.html)
 
 -   **Mar 25:** [Acquiring, processing and cleaning data](march-session-2.html)
+
+-   **Jul 8:** [Basic principles of data visualization](july-session-1.html)
+
+-   **Jul 22:** [Making charts and maps with Datawrapper](july-session-2.html)
