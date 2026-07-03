@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>CCIJ - Data training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="markdown github">
+
+	<header class="navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<nav role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">CCIJ - Data training</a>
+				</div> <!-- /.navbar-header -->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Session notes<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="march-session-1.html">Interviewing data</a></li>
+								<li><a href="march-session-2.html">Acquiring, processing and cleaning data</a></li>
+								<li><a href="july-session-1.html">Basic princinciples of data visualization</a></li>
+								<li><a href="july-session-2.html">Making charts and maps with Datawrapper</a></li>
+							</ul>
+						</li>
+						<li><a href="mailto:p.aldhous@ccij.io">email instructor</a></li>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div> <!-- /.navbar-header -->
+	</header>
+	
+	<div class="container all">
+
+		<h1 id="making-charts-and-maps-with-datawrapper"><a name="making-charts-and-maps-with-datawrapper" href="#making-charts-and-maps-with-datawrapper"></a>Making charts and maps with Datawrapper</h1><p>I’ll demonstrate how to make simple maps and charts with Datawrapper. Rather than trying to follow along in the live sessions, I’d suggest focusing on understanding wht I’d demonstrating showing. You can put questions into the Zoom chat and we can cover in a Q&amp;A at the end of the session.</p><p>The session will be recorded, so you can practice with the video at your own pace later.</p><h3 id="the-tools-we-will-use"><a name="the-tools-we-will-use" href="#the-tools-we-will-use"></a>The tools we will use</h3><ul>
+		<li><strong>Datawrapper</strong> Web app developed by German journalism organizations used to make simple online charts and maps by leading news outlets. No installation required, but you will need to <a href="https://app.datawrapper.de/signin">sign up</a> for a free Datawrapper account.<p>
+		</li><li><strong>Sublime Text</strong> Text editor optimized for editing web pages and other code. Download from <a href="https://www.sublimetext.com/">here</a>. we will use to embed published Datawrapper charts.</li></ul><h3 id="the-data-we-will-use"><a name="the-data-we-will-use" href="#the-data-we-will-use"></a></a>The data we will use</h3><p>Download the zipped folder from <strong><a href="data-july-sessions.zip">this link</a></strong> and unzip.</p><p>The folder contains the following files:<ul></ul></p>
+		<li><code>indicators_2023.csv</code> Data from the World Bank’s World Development Indicators portal. Contains the following variables:<ul>
+		<li><code>country</code> Name of each nation/territory.</li><li><code>iso2c</code> <code>isoc3</code> Two- and three-letter codes for each nation/territory.</li><li><code>year</code> 2023 for this data.</li><li><code>life_expectancy</code> Life expectancy at birth.</li><li><code>gdp</code> Gross Domestic Product in current international dollars, corrected for purchasing power in different territories.</li><li><code>gdp_per_capita</code> Gross Domestic Product per person in current international dollars, corrected for purchasing power in different territories.</li><li><code>population</code> Estimated total population at mid-year, including all residents apart from refugees.</li><li><code>co2_emissions</code> Total greenhouse gas emissions (excluding land use, land-use change and forestry) in millions of metric tonnes of carbon dioxide equivalent.</li><li><code>pc_land_forest</code> Forest area as a percentage of land area.</li><li><code>pc_land_arable</code> Arable land as a percentage of land area.</li><li><code>land_area</code> Total land area in square kilometers.</li><li><code>region</code> As defined by the World Bank.</li><li><code>capital</code> Capital city.</li><li><code>longitude</code> <code>latitude</code> Coordinates at the center of each nation/territory.</li><li><code>income</code> Current income group, as defined by the World Bank.</li><li></li></ul>
+		</li><li><code>camp_fire.geoson</code> Geodata showing the area burned in the 2018 Camp Fire, the deadliest wildfire in California history.</li><li><code>index.html</code> An HTML document in which to embed Datawrapper charts.</li></ul><h3 id="the-charts-and-maps-we-will-make"><a name="the-charts-and-maps-we-will-make" href="#the-charts-and-maps-we-will-make"></a>The charts and maps we will make</h3>
+
+		<div style="min-height:545px" id="datawrapper-vis-5ZvrE"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/5ZvrE/embed.js" charset="utf-8" data-target="#datawrapper-vis-5ZvrE"></script><noscript><img src="https://datawrapper.dwcdn.net/5ZvrE/full.png" alt="Area Burned in the Camp Fire (Locator map)" /></noscript></div>
+
+		<br>
+
+		<div style="min-height:508px" id="datawrapper-vis-0mTAl"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0mTAl/embed.js" charset="utf-8" data-target="#datawrapper-vis-0mTAl"></script><noscript><img src="https://datawrapper.dwcdn.net/0mTAl/full.png" alt="The Health and Wealth of Nations (Scatter Plot)" /></noscript></div>
+
+		<br>
+
+		<div style="min-height:773px" id="datawrapper-vis-oKmSR"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/oKmSR/embed.js" charset="utf-8" data-target="#datawrapper-vis-oKmSR"></script><noscript><img src="https://datawrapper.dwcdn.net/oKmSR/full.png" alt="GDP and Greenhouse Gas Emissions for the World's Nations in 2023 (Table)" /></noscript></div>
+
+		<br>
+
+		<div style="min-height:367px" id="datawrapper-vis-y8F35"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/y8F35/embed.js" charset="utf-8" data-target="#datawrapper-vis-y8F35"></script><noscript><img src="https://datawrapper.dwcdn.net/y8F35/full.png" alt="Percentage of Forested Land by Nation in 2023 (Choropleth map)" /></noscript></div>
+
+		<br>
+
+		<h3 id="resources"><a name="resources" href="#resources"></a>Resources</h3><p><a href="https://www.datawrapper.de/academy"><strong>Datawrapper Academy</strong></a><br>Tutorials for making charts and maps with Datawrapper.</p><p><a href="https://www.datawrapper.de/blog"><strong>Datawrapper blog</strong></a><br>Blog written by Datawrapper staff, has lots of tips on using the tool and for good practice in data visualization.</p><p><a href="https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"><strong>HEX codes to set transparency</strong></a></p><p><a href="https://www.datawrapper.de/academy/i-want-to-change-how-my-data-appears-in-tooltips"><strong>Customizing tooltips in Datawrapper</strong></a><br>How to use HTML code and formatting formulas to improve your tooltips.</p><p><a href="https://www.datawrapper.de/academy/i-want-to-change-how-my-data-appears-in-tooltips"><strong>Flourish</strong></a> Another web-based tool that allows you to make some more sophisticated visualizations, including animations. There are <a href="https://www.datawrapper.de/academy/i-want-to-change-how-my-data-appears-in-tooltips">training videos</a>.</p><p><a href="https://mapshaper.org/"><strong>Mapshaper</strong></a><br>Web app that can be used to convert other geodata formats to GeoJSON for use in Datawrapper.</p>
+
+
+	</div> <!-- /.container all -->
+
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
